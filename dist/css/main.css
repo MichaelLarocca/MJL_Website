@@ -1,0 +1,64 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #59601E;
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px black;
+  font-family: 'Petrona', serif;
+  background-image: url("https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  object-fit: cover;
+  background-position: cover;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.container {
+  padding: 0 5px;
+  width: 90%;
+  margin: 0 auto; }
+
+.ctn-header {
+  margin: 50px auto; }
+
+.nav {
+  background-color: #59601E; }
+
+.front-page {
+  height: 90vh; }
+
+nav {
+  display: flex;
+  justify-content: space-between; }
+  nav .logo {
+    display: flex;
+    align-items: center; }
+  nav ol {
+    display: flex; }
+    nav ol li {
+      margin: 0 5px;
+      list-style: none; }
+    nav ol a {
+      text-decoration: none;
+      color: whitesmoke; }
+      nav ol a:hover {
+        color: #4fff4f; }
+
+header {
+  color: whitesmoke;
+  height: 70vh; }
+
+footer {
+  height: 50px; }
+  footer ol {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    footer ol li {
+      margin: 0 5px;
+      list-style: none; }
+    footer ol a {
+      margin: 0 5px;
+      text-decoration: none;
+      color: whitesmoke; }
+      footer ol a:hover {
+        color: #4fff4f; }
