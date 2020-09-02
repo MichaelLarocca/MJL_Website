@@ -2,10 +2,10 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #59601E;
+  background-color: #59601e;
   color: whitesmoke;
   text-shadow: 1px 1px 1px black;
-  font-family: 'Petrona', serif;
+  font-family: "Petrona", serif;
   background-image: url("https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   object-fit: cover;
   background-position: cover;
@@ -21,7 +21,7 @@ body {
   margin: 50px auto; }
 
 .nav {
-  background-color: #59601E; }
+  background-color: #59601e; }
 
 .front-page {
   height: 90vh; }
@@ -62,3 +62,7 @@ footer {
       color: whitesmoke; }
       footer ol a:hover {
         color: #4fff4f; }
+
+.icon {
+  border: 2px solid whitesmoke;
+  padding: 5px; }
