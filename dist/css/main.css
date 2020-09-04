@@ -6,7 +6,7 @@ body {
   color: whitesmoke;
   text-shadow: 1px 1px 1px black;
   font-family: "Petrona", serif;
-  background-image: url("/dist/img/pexels-negative-space-34153.jpg");
+  background-image: url("../img/pexels-negative-space-34153.jpg");
   object-fit: cover;
   background-position: cover;
   background-size: 100%;
