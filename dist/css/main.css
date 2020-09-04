@@ -2,11 +2,11 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #59601e;
+  background-color: #412c44;
   color: whitesmoke;
   text-shadow: 1px 1px 1px black;
   font-family: "Petrona", serif;
-  background-image: url("https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-image: url("/dist/img/pexels-negative-space-34153.jpg");
   object-fit: cover;
   background-position: cover;
   background-size: 100%;
@@ -18,10 +18,23 @@ body {
   margin: 0 auto; }
 
 .ctn-header {
-  margin: 50px auto; }
+  margin: 150px auto; }
 
 .nav {
-  background-color: #59601e; }
+  background-color: #412c44;
+  position: fixed;
+  opacity: 0.9;
+  width: 100%;
+  margin: 0 auto;
+  top: 0; }
+  .nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5px; }
+    .nav a:hover {
+      color: #412c44;
+      background-color: whitesmoke;
+      text-shadow: none; }
 
 .front-page {
   height: 90vh; }
@@ -41,11 +54,24 @@ nav {
       text-decoration: none;
       color: whitesmoke; }
       nav ol a:hover {
-        color: #4fff4f; }
+        color: blue;
+        text-shadow: non; }
 
 header {
   color: whitesmoke;
-  height: 70vh; }
+  height: 100vh; }
+
+#projects {
+  height: 100vh; }
+
+#about {
+  height: 100vh; }
+
+#contact {
+  height: 100vh; }
+
+.ctn-form input {
+  margin-bottom: 25px; }
 
 footer {
   height: 50px; }
@@ -61,8 +87,11 @@ footer {
       text-decoration: none;
       color: whitesmoke; }
       footer ol a:hover {
-        color: #4fff4f; }
+        color: #412c44;
+        background-color: whitesmoke;
+        text-shadow: non; }
 
 .icon {
   border: 2px solid whitesmoke;
-  padding: 5px; }
+  padding: 5px;
+  text-shadow: none; }

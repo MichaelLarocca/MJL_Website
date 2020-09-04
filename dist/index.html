@@ -23,26 +23,55 @@
   </head>
 
   <body>
-    <div class="nav">
+    <div id="nav" class="nav">
       <nav class="container">
-        <div class="logo">MJL</div>
+        <div class="logo"><a href="#hero">MJL</a></div>
         <div class="nav-list">
           <ol>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ol>
         </div>
       </nav>
     </div>
 
     <div class="front-page">
-      <header class="container ctn-header">
+      <header id="hero" class="container ctn-header">
         <h1>Michael Jude Larocca</h1>
         <h2>Front End Web Developer & Musician</h2>
       </header>
 
       <main class="container"></main>
+
+      <section id="projects" class="container">Projects</section>
+
+      <section id="about" class="container">About</section>
+
+      <section id="contact" class="container">
+        <!-- Contact -->
+        <h2>Contact Me</h2>
+        <br />
+        <form action="submit" class="container ctn-form">
+          <label for="fName">First Name</label>
+          <br />
+          <input type="text" id="fName" />
+          <br />
+          <label for="lName">Last Name</label>
+          <br />
+          <input type="text" id="lName" />
+          <br />
+          <label for="eMail">e-mail</label>
+          <br />
+          <input type="email" id="eMail" />
+          <br />
+          <label for="comments">Comments</label>
+          <br />
+          <input type="text" name="" id="comments" />
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
 
       <div>
         <footer class="container">
