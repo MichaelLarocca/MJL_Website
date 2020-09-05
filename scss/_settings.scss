@@ -1,7 +1,22 @@
+$glass-bead: #cabcc5;
+$nero: #242424;
+$moonscape: #705f69;
+$apple-herb-black: #4b4147;
+$dark-lavender: #876698;
+$aspen-green: #819d76;
+$royal-indigo: #51405e;
+$deep-viridian: #4b6444;
+$plush: #3a3245;
+$palm-leaf: #364732;
+
 $colors: (
-  color-bg: #412c44,
-  color-text: whitesmoke,
-  color-accent: blue,
+  // color-bg: #412c44,
+  // color-text: whitesmoke,
+  // color-accent: blue,
+  parent-bg: $nero,
+  color: $plush,
+  bg: $glass-bead,
+  border: $royal-indigo
 );
 
 @function color($color-name) {
