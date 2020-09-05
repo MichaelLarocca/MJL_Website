@@ -1,7 +1,11 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 16px;
   background-color: #412c44;
   color: whitesmoke;
   text-shadow: 1px 1px 1px black;
@@ -15,12 +19,14 @@ body {
 .container {
   padding: 0 5px;
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 .ctn-header {
   margin: 150px auto; }
 
 .nav {
+  z-index: 100;
   background-color: #412c44;
   position: fixed;
   opacity: 0.9;
@@ -95,3 +101,17 @@ footer {
   border: 2px solid whitesmoke;
   padding: 5px;
   text-shadow: none; }
+
+.ctn {
+  position: relative;
+  border: solid 1px green;
+  height: 100vh; }
+
+.ctn a {
+  position: absolute;
+  left: 0px;
+  top: -60px;
+  border: solid 1px red; }
+
+.ctn-nav {
+  height: 60px; }

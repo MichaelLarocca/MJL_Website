@@ -2,10 +2,15 @@ $color-bg: #412c44;
 $color-text: whitesmoke;
 $color-accent: blue;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 
   background-color: $color-bg;
   color: $color-text;
@@ -35,6 +40,8 @@ body {
 
   width: 90%;
   margin: 0 auto;
+
+  position: relative;
 }
 
 .ctn-header {
@@ -43,6 +50,7 @@ body {
 }
 
 .nav {
+  z-index: 100;
   background-color: $color-bg;
   position: fixed;
   opacity: 0.9;
@@ -107,6 +115,9 @@ header {
 
 #projects {
   height: 100vh;
+  // position: absolute;
+  // left: 0px;
+  // top: -60px;
 }
 
 #about {
@@ -156,3 +167,30 @@ footer {
   padding: 5px;
   text-shadow: none;
 }
+
+.ctn {
+  // Set container to relative
+  position: relative;
+  border: solid 1px green;
+  height: 100vh;
+}
+
+.ctn a {
+  // Set links in the container to absolute
+  position: absolute;
+  left: 0px;
+  top: -60px;
+  border: solid 1px red;
+}
+
+.ctn-nav {
+  height: 60px;
+}
+
+// .ctn .target-label {
+//   position: absolute;
+//   left: 0px;
+//   /* anchor offset + header height + header padding + header margins */
+//   top: 0px;
+//   margin: 0;
+// }
