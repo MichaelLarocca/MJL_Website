@@ -124,7 +124,7 @@ nav {
 
   &-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(auto, 450px));
+    grid-template-columns: repeat(2, minmax(auto, 500px));
     justify-content: center;
     row-gap: 10px;
     column-gap: 50px;
@@ -134,12 +134,12 @@ nav {
     // display: flex;
     // align-items: center;
     text-align: center;
+    font-size: 1.2rem;
   }
 
   &-grid-item img {
     @include box-shadow;
-    width: 75%;
-    margin-right: 1rem;
+    width: 50%;
   }
 
   a {
@@ -149,5 +149,89 @@ nav {
     &:focus {
       @include anchor-hover;
     }
+  }
+}
+
+.about-me {
+  background-color: color(border);
+  color: color(color-light);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    font-family: "Montserrast", sans-serif;
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  &-sub-title {
+    max-width: 500px;
+    font-weight: 700;
+  }
+}
+
+.contact {
+  margin: 2em;
+
+  &-title {
+    text-align: center;
+    font-family: "Montserrast", sans-serif;
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .form {
+    max-width: 500px;
+    margin: 0 auto;
+
+    label {
+      color: color(border);
+      font-weight: 700;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      margin-top: 0.25rem;
+      margin-bottom: 0.75rem;
+      outline: none;
+      border: 1px solid color(bg);
+      border-radius: 0.3em;
+      padding: 0.5em;
+      color: inherit;
+      font-family: inherit;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 75px;
+      max-height: 200px;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: color(border);
+    }
+  }
+}
+
+.btn {
+  background-color: color(border);
+  color: color(color-light);
+  padding: 0.25em 1em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.btn-container {
+  text-align: end;
+  .btn-square {
+    border-radius: 0.3em;
   }
 }
