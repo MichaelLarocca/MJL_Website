@@ -123,7 +123,7 @@ Fresh fruits and vegetables delivered straight to your door. "
       </section>
       <section class="contact">
         <h2 class="contact-title">Contact</h2>
-        <form action="post" class="form">
+        <form action="POST" data-netlify="true" data-netlify-recaptcha="true" class="form">
           <label for="fName">First Name</label>
           <input type="text" name="fName" id="fName" placeholder="First">
 
@@ -135,10 +135,34 @@ Fresh fruits and vegetables delivered straight to your door. "
           
           <label for="message">Message</label>
           <textarea name="message" id="message" placeholder="Message"></textarea>
+          <div>
+            <div data-netlify-recaptcha="true"></div>
+          </div>
           <div class="btn-container">
             <button type="submit" class="btn btn-square">Send</button>
           </div>
         </section>
     </main>
+    <footer class="footer nav">
+      <ul>
+        <li>
+          <a
+            href="https://github.com/MichaelLarocca"
+            target="blank"
+            class="icon"
+            >Git Hub</a
+          ><i class="fab fa-github"></i>
+        </li>
+        <li>
+          <a
+            href="https://codepen.io/Michael_Larocca"
+            target="blank"
+            class="icon"
+            >Code Pen</a
+          ><i class="fab fa-codepen"></i>
+        </li>
+      </ul>
+    
+    </footer>
   </body>
 </html>

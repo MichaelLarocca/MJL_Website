@@ -188,6 +188,7 @@ nav {
 
     label {
       color: color(border);
+      font-size: 1.2em;
       font-weight: 700;
     }
 
@@ -202,6 +203,9 @@ nav {
       padding: 0.5em;
       color: inherit;
       font-family: inherit;
+      font-size: 1em;
+      font-weight: 700;
+      color: color(border);
     }
 
     textarea {
@@ -233,5 +237,30 @@ nav {
   text-align: end;
   .btn-square {
     border-radius: 0.3em;
+  }
+}
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.3em;
+  justify-content: space-around;
+  align-items: center;
+
+  ul {
+    display: flex;
+
+    li {
+      margin: 0 2em;
+      list-style: none;
+
+      a {
+        @include anchor;
+
+        &:hover {
+          @include anchor-hover;
+        }
+      }
+    }
   }
 }

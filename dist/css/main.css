@@ -154,6 +154,7 @@ nav {
     margin: 0 auto; }
     .contact .form label {
       color: #51405e;
+      font-size: 1.2em;
       font-weight: 700; }
     .contact .form input,
     .contact .form textarea {
@@ -165,7 +166,10 @@ nav {
       border-radius: 0.3em;
       padding: 0.5em;
       color: inherit;
-      font-family: inherit; }
+      font-family: inherit;
+      font-size: 1em;
+      font-weight: 700;
+      color: #51405e; }
     .contact .form textarea {
       resize: vertical;
       min-height: 75px;
@@ -189,3 +193,25 @@ nav {
   text-align: end; }
   .btn-container .btn-square {
     border-radius: 0.3em; }
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.3em;
+  justify-content: space-around;
+  align-items: center; }
+  .footer ul {
+    display: flex; }
+    .footer ul li {
+      margin: 0 2em;
+      list-style: none; }
+      .footer ul li a {
+        text-decoration: none;
+        color: #3a3245;
+        transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+        margin-left: 1rem;
+        padding: 0.5rem; }
+        .footer ul li a:hover {
+          background-color: #3a3245;
+          color: whitesmoke;
+          text-decoration: underline; }
