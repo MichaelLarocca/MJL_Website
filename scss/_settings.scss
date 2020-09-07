@@ -8,15 +8,14 @@ $royal-indigo: #51405e;
 $deep-viridian: #4b6444;
 $plush: #3a3245;
 $palm-leaf: #364732;
+$color-light: whitesmoke;
 
 $colors: (
-  // color-bg: #412c44,
-  // color-text: whitesmoke,
-  // color-accent: blue,
   parent-bg: $nero,
   color: $plush,
   bg: $glass-bead,
-  border: $royal-indigo
+  border: $royal-indigo,
+  color-light: $color-light,
 );
 
 @function color($color-name) {
@@ -27,15 +26,21 @@ $colors: (
   text-decoration: none;
   color: color(color);
   transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
-  padding: 0.5em;
+  margin-left: 1rem;
+  padding: 0.5rem;
 }
 
 @mixin anchor-hover {
   background-color: color(color);
-  color: color(bg);
+  color: color(color-light);
+  text-decoration: underline;
 }
 
 @mixin container {
   width: 90%;
   margin: 0 auto;
+}
+
+@mixin box-shadow {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }

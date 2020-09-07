@@ -1,46 +1,112 @@
-.container {
-  border: 1px solid greenyellow;
-  width: 90%;
-  margin: 0 auto;
-  position: relative; }
+* {
+  box-sizing: border-box; }
 
-.ctn-fixed {
-  position: fixed;
-  width: 90%;
-  margin: 0 auto;
-  background-color: #cabcc5;
-  width: 100%;
-  height: 50px; }
+html {
+  scroll-behavior: smooth; }
 
 body {
-  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  background-color: #242424;
-  font-family: "Cardo", serif; }
+  color: #3a3245;
+  font-family: "Cardo", serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
 
 nav {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 1em;
+  font-family: "Montserrat", sans-serif; }
+
+.full-name {
+  font-family: "Montserrat", sans-serif; }
+
+.header {
+  height: 100vh;
+  background-image: url("../img/pexels-negative-space-34153.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #cabcc5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.nav {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
-  nav a {
+  align-items: center;
+  background-color: #cabcc5;
+  color: #3a3245;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem 1rem; }
+
+.nav-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700; }
+  .nav-top .logo a {
     text-decoration: none;
     color: #3a3245;
     transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
-    padding: 0.5em; }
-  nav .nav-list ol {
-    display: flex; }
-    nav .nav-list ol li {
-      margin: 0 1em;
-      list-style: none; }
-    nav .nav-list ol a {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    color: whitesmoke; }
+  .nav-top .nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .nav-top .nav-list a {
       text-decoration: none;
       color: #3a3245;
       transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
-      padding: 0.5em; }
-      nav .nav-list ol a:hover {
+      margin-left: 1rem;
+      padding: 0.5rem; }
+      .nav-top .nav-list a:hover, .nav-top .nav-list a:focus {
         background-color: #3a3245;
-        color: #cabcc5; }
+        color: whitesmoke;
+        text-decoration: underline; }
+
+.hero {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  border: 1px solid #cabcc5;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 5px; }
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  color: whitesmoke;
+  opacity: 1;
+  margin: 0; }
+
+.sub-title {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin-top: 0.3rem; }
+
+.down-arrow {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 2rem;
+  color: whitesmoke; }
+
+.projects {
+  font-weight: 700; }
+  .projects-title {
+    font-family: "Montserrat", sans-serif; }
+  .projects img {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
+  .projects a {
+    text-decoration: none;
+    color: #3a3245;
+    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+    margin-left: 1rem;
+    padding: 0.5rem; }
+    .projects a:hover, .projects a:focus {
+      background-color: #3a3245;
+      color: whitesmoke;
+      text-decoration: underline; }
