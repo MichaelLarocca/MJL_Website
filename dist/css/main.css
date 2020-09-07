@@ -95,11 +95,27 @@ nav {
   color: whitesmoke; }
 
 .projects {
+  border: 1px solid blue;
+  padding: 2rem;
   font-weight: 700; }
   .projects-title {
-    font-family: "Montserrat", sans-serif; }
-  .projects img {
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center; }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 450px));
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 50px; }
+  .projects-grid-item {
+    text-align: center; }
+  .projects-grid-item img {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    width: 75%;
+    margin-right: 1rem; }
   .projects a {
     text-decoration: none;
     color: #3a3245;
