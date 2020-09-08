@@ -157,7 +157,8 @@ nav {
   background-size: cover;
   /*   background-size: contain; */
   /*   background-repeat: no-repeat; */
-  background-blend-mode: overlay; }
+  background-blend-mode: overlay;
+  text-shadow: 1px 1px 1px whitesmoke; }
   .contact-title {
     text-align: center;
     font-family: "Montserrast", sans-serif;
@@ -197,11 +198,15 @@ nav {
   color: whitesmoke;
   padding: 0.25em 1em;
   text-decoration: none;
-  border: none;
+  border: 1px solid whitesmoke;
   cursor: pointer;
   font-size: inherit;
   font-family: inherit;
   font-weight: 700; }
+  .btn:hover, .btn:focus {
+    background-color: whitesmoke;
+    border: 1px solid #51405e;
+    color: #51405e; }
 
 .btn-container {
   text-align: end; }

@@ -193,6 +193,7 @@ nav {
   /*   background-size: contain; */
   /*   background-repeat: no-repeat; */
   background-blend-mode: overlay;
+  text-shadow: 1px 1px 1px whitesmoke;
 
   &-title {
     text-align: center;
@@ -245,11 +246,18 @@ nav {
   color: color(color-light);
   padding: 0.25em 1em;
   text-decoration: none;
-  border: none;
+  border: 1px solid color(color-light);
   cursor: pointer;
   font-size: inherit;
   font-family: inherit;
   font-weight: 700;
+
+  &:hover,
+  &:focus {
+    background-color: color(color-light);
+    border: 1px solid color(border);
+    color: color(border);
+  }
 }
 
 .btn-container {
