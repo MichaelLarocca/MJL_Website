@@ -151,7 +151,8 @@ nav {
     font-weight: 700; }
 
 .contact {
-  padding-top: 5em;
+  height: 95vh;
+  padding-top: 8em;
   padding-bottom: 1em;
   background-image: url("../img/concert-1149979_1280.jpg"), radial-gradient(whitesmoke, #777, #333);
   background-position: center;
