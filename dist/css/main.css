@@ -209,7 +209,8 @@ nav {
     color: #51405e; }
 
 .btn-container {
-  text-align: end; }
+  text-align: start;
+  margin-top: 2em; }
   .btn-container .btn-square {
     border-radius: 0.3em; }
 
