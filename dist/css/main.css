@@ -96,7 +96,8 @@ nav {
 
 .projects {
   padding: 5rem;
-  font-weight: 700; }
+  font-weight: 700;
+  height: 100vh; }
   .projects-title {
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -128,7 +129,7 @@ nav {
 
 .about-me {
   background-color: #51405e;
-  background-image: url("../img/guitar-electric-guitar-les-paul-epiphone-159266.jpeg"), radial-gradient(whitesmoke, #333, #111);
+  background-image: url("../img/rs-guitar-electric-guitar-les-paul-epiphone-159266.jpeg"), radial-gradient(whitesmoke, #333, #111);
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
@@ -153,7 +154,7 @@ nav {
 .contact {
   padding-top: 5em;
   padding-bottom: 1em;
-  background-image: url("../img/concert-1149979_1280.jpg"), radial-gradient(whitesmoke, #777, #333);
+  background-image: url("../img/rs-concert-1149979_1280.jpg"), radial-gradient(whitesmoke, #777, #333);
   background-position: center;
   background-size: cover;
   /*   background-size: contain; */
