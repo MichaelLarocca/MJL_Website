@@ -13,8 +13,9 @@ body {
   // background-color: color(parent-bg);
   color: color(color);
   // font-family: "Montserrat", sans-serif;
-  font-family: "Cardo", serif;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-family: "Cardo", serifpx;
+  text-shadow: 1px 1px 1 rgba(0, 0, 0, 0.5);
+  font-size: 16px;
 }
 
 nav {
@@ -216,6 +217,7 @@ nav {
 
     input,
     textarea {
+      @include box-shadow;
       width: 100%;
       margin-top: 0.25rem;
       margin-bottom: 0.75rem;
@@ -244,6 +246,7 @@ nav {
 }
 
 .btn {
+  @include box-shadow;
   background-color: color(border);
   color: color(color-light);
   padding: 0.25em 1em;
@@ -293,5 +296,33 @@ nav {
         }
       }
     }
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 9px;
+    width: 400px auto;
+  }
+
+  form,
+  .hero {
+    width: 350px;
+  }
+
+  .projects {
+    height: 105em;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

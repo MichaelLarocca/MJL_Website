@@ -7,8 +7,9 @@ html {
 body {
   margin: 0;
   color: #3a3245;
-  font-family: "Cardo", serif;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+  font-family: "Cardo", serifpx;
+  text-shadow: 1px 1px 1 rgba(0, 0, 0, 0.5);
+  font-size: 16px; }
 
 nav {
   font-family: "Montserrat", sans-serif; }
@@ -175,6 +176,7 @@ nav {
       font-weight: 700; }
     .contact .form input,
     .contact .form textarea {
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
       width: 100%;
       margin-top: 0.25rem;
       margin-bottom: 0.75rem;
@@ -196,6 +198,7 @@ nav {
       border-color: #51405e; }
 
 .btn {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   background-color: #51405e;
   color: whitesmoke;
   padding: 0.25em 1em;
@@ -238,3 +241,21 @@ nav {
           background-color: #3a3245;
           color: whitesmoke;
           text-decoration: underline; }
+
+@media (max-width: 500px) {
+  body {
+    font-size: 9px;
+    width: 400px auto; }
+  form,
+  .hero {
+    width: 350px; }
+  .projects {
+    height: 105em; }
+  .projects-grid {
+    grid-template-columns: 1fr; }
+  .contact {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
