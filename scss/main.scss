@@ -108,6 +108,7 @@ nav {
   bottom: 1rem;
   font-size: 2rem;
   color: color(color-light);
+  animation: scroll-down-bounce 1s alternate 5s infinite linear;
 }
 
 .projects {
@@ -150,6 +151,14 @@ nav {
     &:focus {
       @include anchor-hover;
     }
+  }
+  img {
+    transition: all 0.1s ease-in-out;
+  }
+
+  img:hover,
+  img:focus {
+    transform: scale(1.03);
   }
 }
 
@@ -210,7 +219,7 @@ nav {
     margin: 0 auto;
 
     label {
-      color: color(border);
+      color: color(parent-bg);
       font-size: 1.2em;
       font-weight: 700;
     }
@@ -222,7 +231,7 @@ nav {
       margin-top: 0.25rem;
       margin-bottom: 0.75rem;
       outline: none;
-      border: 1px solid color(bg);
+      border: 2px solid color(bg);
       border-radius: 0.3em;
       padding: 0.5em;
       color: inherit;
@@ -230,6 +239,7 @@ nav {
       font-size: 1em;
       font-weight: 700;
       color: color(border);
+      transition: border-color 0.2s;
     }
 
     textarea {
@@ -262,6 +272,7 @@ nav {
     background-color: color(color-light);
     border: 1px solid color(border);
     color: color(border);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -296,6 +307,16 @@ nav {
         }
       }
     }
+  }
+}
+
+@keyframes scroll-down-bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+    // transform: rotate(180deg);
   }
 }
 
