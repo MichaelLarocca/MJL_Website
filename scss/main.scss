@@ -14,7 +14,7 @@ body {
   color: color(color);
   // font-family: "Montserrat", sans-serif;
   font-family: "Cardo", serifpx;
-  text-shadow: 1px 1px 1 rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
   font-size: 16px;
 }
 
@@ -125,7 +125,7 @@ nav {
 
   &-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(auto, 500px));
+    grid-template-columns: repeat(2, minmax(auto, auto));
     justify-content: center;
     row-gap: 10px;
     column-gap: 50px;
@@ -318,11 +318,16 @@ nav {
     grid-template-columns: 1fr;
   }
 
+  .about-me p {
+    font-size: 1rem;
+  }
+
   .contact {
     height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
   }
 }
