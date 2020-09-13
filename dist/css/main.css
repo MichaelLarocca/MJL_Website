@@ -118,16 +118,6 @@ nav {
   .projects-grid-item img {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     width: 50%; }
-  .projects a {
-    text-decoration: none;
-    color: #3a3245;
-    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
-    margin-left: 1rem;
-    padding: 0.5rem; }
-    .projects a:hover, .projects a:focus {
-      background-color: #3a3245;
-      color: whitesmoke;
-      text-decoration: underline; }
   .projects img {
     transition: all 0.1s ease-in-out; }
   .projects img:hover,
