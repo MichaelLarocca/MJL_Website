@@ -147,7 +147,6 @@ nav {
   a {
     &:hover,
     &:focus {
-      @include box-shadow;
     }
   }
   img {
@@ -157,6 +156,7 @@ nav {
   img:hover,
   img:focus {
     transform: scale(1.03);
+    @include box-shadow;
   }
 }
 

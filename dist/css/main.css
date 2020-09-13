@@ -118,13 +118,12 @@ nav {
   .projects-grid-item img {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     width: 50%; }
-  .projects a:hover, .projects a:focus {
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
   .projects img {
     transition: all 0.1s ease-in-out; }
   .projects img:hover,
   .projects img:focus {
-    transform: scale(1.03); }
+    transform: scale(1.03);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
 
 .about-me {
   background-color: #51405e;
