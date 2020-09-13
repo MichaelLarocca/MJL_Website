@@ -145,11 +145,9 @@ nav {
   }
 
   a {
-    // @include anchor;
-
     &:hover,
     &:focus {
-      // @include anchor-hover;
+      @include box-shadow;
     }
   }
   img {
