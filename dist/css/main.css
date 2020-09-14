@@ -148,6 +148,18 @@ nav {
     text-indent: 1em;
     max-width: 500px;
     font-weight: 700; }
+  .about-me a {
+    text-decoration: underline;
+    color: whitesmoke;
+    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    padding: 0;
+    margin: 0; }
+    .about-me a:hover {
+      background-color: whitesmoke;
+      color: #3a3245;
+      text-decoration: underline; }
 
 .contact {
   padding-top: 5em;

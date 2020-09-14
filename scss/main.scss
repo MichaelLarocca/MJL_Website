@@ -190,6 +190,16 @@ nav {
     max-width: 500px;
     font-weight: 700;
   }
+
+  a {
+    @include anchor-light;
+    padding: 0;
+    margin: 0;
+
+    &:hover {
+      @include anchor-hover-light;
+    }
+  }
 }
 
 .contact {

@@ -30,9 +30,23 @@ $colors: (
   padding: 0.5rem;
 }
 
+@mixin anchor-light {
+  text-decoration: underline;
+  color: color(color-light);
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
 @mixin anchor-hover {
   background-color: color(color);
   color: color(color-light);
+  text-decoration: underline;
+}
+
+@mixin anchor-hover-light {
+  background-color: color(color-light);
+  color: color(color);
   text-decoration: underline;
 }
 
