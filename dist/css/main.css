@@ -271,7 +271,7 @@ nav {
   .projects-grid {
     grid-template-columns: 1fr; }
   .about-me p {
-    font-size: 1rem; }
+    font-size: 0.9rem; }
   .contact {
     height: 95vh;
     display: flex;
