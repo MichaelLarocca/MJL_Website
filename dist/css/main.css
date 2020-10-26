@@ -106,6 +106,8 @@ nav {
     margin-bottom: 2rem;
     font-size: 2rem;
     text-align: center; }
+  .projects h3 {
+    text-align: center; }
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, auto));
@@ -124,6 +126,10 @@ nav {
   .projects img:focus {
     transform: scale(1.03);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
+
+.projects-dark {
+  background-color: #242424;
+  color: whitesmoke; }
 
 .about-me {
   background-color: #51405e;

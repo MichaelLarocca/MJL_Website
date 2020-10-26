@@ -124,6 +124,10 @@ nav {
     text-align: center;
   }
 
+  h3 {
+    text-align: center;
+  }
+
   &-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, auto));
@@ -158,6 +162,11 @@ nav {
     transform: scale(1.03);
     @include box-shadow;
   }
+}
+
+.projects-dark {
+  background-color: color(parent-bg);
+  color: color(color-light);
 }
 
 .about-me {
