@@ -8,7 +8,7 @@ body {
   margin: 0;
   color: #3a3245;
   font-family: "Cardo", serifpx;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
   font-size: 16px; }
 
 nav {
@@ -71,11 +71,12 @@ nav {
 .hero {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   border: 1px solid #cabcc5;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   opacity: 1;
   padding: 2rem;
-  text-align: center;
   border-radius: 5px; }
+  .hero h2 {
+    text-align: center; }
 
 .title {
   font-family: "Montserrat", sans-serif;
@@ -149,7 +150,8 @@ nav {
   .about-me-title {
     font-family: "Montserrast", sans-serif;
     margin: 0;
-    font-size: 2rem; }
+    font-size: 2rem;
+    text-decoration: underline; }
   .about-me-sub-title {
     text-indent: 1em;
     max-width: 500px;
@@ -176,9 +178,11 @@ nav {
   /*   background-size: contain; */
   /*   background-repeat: no-repeat; */
   background-blend-mode: overlay;
-  text-shadow: 1px 1px 1px whitesmoke; }
+  text-shadow: 1px 1px 1px whitesmoke;
+  height: 90vh; }
   .contact-title {
     text-align: center;
+    text-decoration: underline;
     font-family: "Montserrast", sans-serif;
     margin: 0;
     font-size: 2rem; }
@@ -228,7 +232,7 @@ nav {
     background-color: whitesmoke;
     border: 1px solid #51405e;
     color: #51405e;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); }
 
 .btn-container {
   text-align: start;
@@ -242,7 +246,7 @@ nav {
   font-size: 1.3em;
   justify-content: space-around;
   align-items: center;
-  height: 3em; }
+  height: 10vh; }
   .footer ul {
     display: flex; }
     .footer ul li {
@@ -279,7 +283,7 @@ nav {
   .about-me p {
     font-size: 0.9rem; }
   .contact {
-    height: 95vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

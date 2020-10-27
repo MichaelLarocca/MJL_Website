@@ -14,7 +14,7 @@ body {
   color: color(color);
   // font-family: "Montserrat", sans-serif;
   font-family: "Cardo", serifpx;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
   font-size: 16px;
 }
 
@@ -82,11 +82,14 @@ nav {
 .hero {
   @include box-shadow;
   border: 1px solid color(bg);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   opacity: 1;
   padding: 2rem;
-  text-align: center;
   border-radius: 5px;
+
+  h2 {
+    text-align: center;
+  }
 }
 
 .title {
@@ -192,6 +195,7 @@ nav {
     font-family: "Montserrast", sans-serif;
     margin: 0;
     font-size: 2rem;
+    text-decoration: underline;
   }
 
   &-sub-title {
@@ -223,9 +227,11 @@ nav {
   /*   background-repeat: no-repeat; */
   background-blend-mode: overlay;
   text-shadow: 1px 1px 1px whitesmoke;
+  height: 90vh;
 
   &-title {
     text-align: center;
+    text-decoration: underline;
     font-family: "Montserrast", sans-serif;
     margin: 0;
     font-size: 2rem;
@@ -289,7 +295,7 @@ nav {
     background-color: color(color-light);
     border: 1px solid color(border);
     color: color(border);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
   }
 }
 
@@ -307,7 +313,7 @@ nav {
   font-size: 1.3em;
   justify-content: space-around;
   align-items: center;
-  height: 3em;
+  height: 10vh;
 
   ul {
     display: flex;
@@ -361,7 +367,7 @@ nav {
   }
 
   .contact {
-    height: 95vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
