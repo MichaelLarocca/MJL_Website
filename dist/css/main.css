@@ -169,6 +169,34 @@ nav {
       color: #3a3245;
       text-decoration: underline; }
 
+.they-say {
+  text-align: center;
+  text-shadow: none;
+  font-weight: bold;
+  line-height: 1.4rem; }
+  .they-say .container-they-say {
+    width: 50%;
+    margin: 0 auto; }
+    .they-say .container-they-say .name-title {
+      font-size: 0.7rem; }
+    .they-say .container-they-say p {
+      font-size: 1rem;
+      margin: 0; }
+    .they-say .container-they-say h2 {
+      font-family: "Montserrast", sans-serif;
+      margin: 50px;
+      text-decoration: none;
+      line-height: 2rem; }
+    .they-say .container-they-say img {
+      width: 80%;
+      margin: 5px; }
+    .they-say .container-they-say .img-codecademy {
+      width: 50%;
+      margin-top: 50px; }
+    .they-say .container-they-say .p-codecademy {
+      margin-top: 0px;
+      margin-bottom: 50px; }
+
 .contact {
   padding-top: 5em;
   padding-bottom: 1em;
@@ -282,6 +310,11 @@ nav {
     grid-template-columns: 1fr; }
   .about-me p {
     font-size: 0.9rem; }
+  .they-say {
+    width: 100%;
+    margin: 0 auto; }
+    .they-say .container-they-say {
+      width: 100%; }
   .contact {
     height: 90vh;
     display: flex;

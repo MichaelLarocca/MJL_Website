@@ -215,6 +215,49 @@ nav {
   }
 }
 
+.they-say {
+  text-align: center;
+  text-shadow: none;
+  font-weight: bold;
+  line-height: 1.4rem;
+
+  .container-they-say {
+    width: 50%;
+    margin: 0 auto;
+
+    .name-title {
+      font-size: 0.7rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    h2 {
+      font-family: "Montserrast", sans-serif;
+      margin: 50px;
+      text-decoration: none;
+      line-height: 2rem;
+    }
+
+    img {
+      width: 80%;
+      margin: 5px;
+    }
+
+    .img-codecademy {
+      width: 50%;
+      margin-top: 50px;
+    }
+
+    .p-codecademy {
+      margin-top: 0px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
 .contact {
   // margin: 2em;
   padding-top: 5em;
@@ -364,6 +407,15 @@ nav {
 
   .about-me p {
     font-size: 0.9rem;
+  }
+
+  .they-say {
+    width: 100%;
+    margin: 0 auto;
+
+    .container-they-say {
+      width: 100%;
+    }
   }
 
   .contact {
