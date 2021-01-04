@@ -351,6 +351,7 @@ nav {
 }
 
 .footer {
+  display: flex;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.3em;
@@ -362,7 +363,7 @@ nav {
     display: flex;
 
     li {
-      margin: 0 2em;
+      margin: 0 2.5em;
       list-style: none;
 
       a {
@@ -426,4 +427,10 @@ nav {
     align-items: center;
     font-size: 1rem;
   }
+
+  .video {
+    width: 100%;
+    overflow: hidden;
+  }
+
 }

@@ -269,6 +269,7 @@ nav {
     border-radius: 0.3em; }
 
 .footer {
+  display: flex;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.3em;
@@ -278,7 +279,7 @@ nav {
   .footer ul {
     display: flex; }
     .footer ul li {
-      margin: 0 2em;
+      margin: 0 2.5em;
       list-style: none; }
       .footer ul li a {
         text-decoration: none;
@@ -321,4 +322,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .video {
+    width: 100%;
+    overflow: hidden; } }
