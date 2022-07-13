@@ -1,436 +1,436 @@
 @import "settings";
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  // background-color: color(parent-bg);
-  color: color(color);
-  // font-family: "Montserrat", sans-serif;
-  font-family: "Cardo", serifpx;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
-  font-size: 16px;
+	margin: 0;
+	// background-color: color(parent-bg);
+	color: color(color);
+	// font-family: "Montserrat", sans-serif;
+	font-family: "Cardo", serifpx;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+	font-size: 16px;
 }
 
 nav {
-  font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 .full-name {
-  font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 .header {
-  height: 100vh;
-  background-image: url("../img/rs-pexels-negative-space-34153.jpg");
-  background-size: cover;
-  background-position: center;
-  color: color(bg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+	height: 100vh;
+	background-image: url("../img/rs-pexels-negative-space-34153.jpg");
+	background-size: cover;
+	background-position: center;
+	color: color(bg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: color(bg);
-  color: color(color);
-  font-family: "Montserrat", sans-serif;
-  padding: 0.5rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: color(bg);
+	color: color(color);
+	font-family: "Montserrat", sans-serif;
+	padding: 0.5rem 1rem;
 }
 
 .nav-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  font-weight: 700;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	font-weight: 700;
 
-  .logo a {
-    @include anchor;
-    color: color(color-light);
-  }
+	.logo a {
+		@include anchor;
+		color: color(color-light);
+	}
 
-  .nav-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	.nav-list {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		list-style: none;
 
-    a {
-      @include anchor;
+		a {
+			@include anchor;
 
-      &:hover,
-      &:focus {
-        @include anchor-hover;
-      }
-    }
-  }
+			&:hover,
+			&:focus {
+				@include anchor-hover;
+			}
+		}
+	}
 }
 
 .hero {
-  @include box-shadow;
-  border: 1px solid color(bg);
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 1;
-  padding: 2rem;
-  border-radius: 5px;
+	@include box-shadow;
+	border: 1px solid color(bg);
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 1;
+	padding: 2rem;
+	border-radius: 5px;
 
-  h2 {
-    text-align: center;
-  }
+	h2 {
+		text-align: center;
+	}
 }
 
 .title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
-  color: color(color-light);
-  opacity: 1;
-  margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-size: 3rem;
+	color: color(color-light);
+	opacity: 1;
+	margin: 0;
 }
 
 .sub-title {
-  font-size: 1.5rem;
-  color: color(color-light);
-  margin-top: 0.3rem;
+	font-size: 1.5rem;
+	color: color(color-light);
+	margin-top: 0.3rem;
 }
 
 .down-arrow {
-  position: absolute;
-  bottom: 1rem;
-  font-size: 2rem;
-  color: color(color-light);
-  animation: scroll-down-bounce 1s alternate 5s infinite linear;
+	position: absolute;
+	bottom: 1rem;
+	font-size: 2rem;
+	color: color(color-light);
+	animation: scroll-down-bounce 1s alternate 5s infinite linear;
 }
 
 .projects {
-  padding: 5rem;
-  font-weight: 700;
-  height: 100vh;
+	padding: 5rem;
+	font-weight: 700;
+	// height: 100vh;
+	height: 1000px;
 
-  &-title {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    text-align: center;
-  }
+	&-title {
+		font-family: "Montserrat", sans-serif;
+		margin: 0;
+		margin-bottom: 2rem;
+		font-size: 2rem;
+		text-align: center;
+	}
 
-  h3 {
-    text-align: center;
-  }
+	h3 {
+		text-align: center;
+	}
 
-  &-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(auto, auto));
-    justify-content: center;
-    row-gap: 10px;
-    column-gap: 50px;
-  }
+	&-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(auto, auto));
+		justify-content: center;
+		row-gap: 10px;
+		column-gap: 50px;
+	}
 
-  &-grid-item {
-    // display: flex;
-    // align-items: center;
-    text-align: center;
-    font-size: 1.2rem;
-  }
+	&-grid-item {
+		// display: flex;
+		// align-items: center;
+		text-align: center;
+		font-size: 1.2rem;
+	}
 
-  &-grid-item img {
-    @include box-shadow;
-    width: 50%;
-  }
+	&-grid-item img {
+		@include box-shadow;
+		width: 50%;
+	}
 
-  a {
-    &:hover,
-    &:focus {
-    }
-  }
-  img {
-    transition: all 0.1s ease-in-out;
-  }
+	a {
+		&:hover,
+		&:focus {
+		}
+	}
+	img {
+		transition: all 0.1s ease-in-out;
+	}
 
-  img:hover,
-  img:focus {
-    transform: scale(1.03);
-    @include box-shadow;
-  }
+	img:hover,
+	img:focus {
+		transform: scale(1.03);
+		@include box-shadow;
+	}
 }
 
 .projects-dark {
-  background-color: color(parent-bg);
-  color: color(color-light);
+	background-color: color(parent-bg);
+	color: color(color-light);
 }
 
 .about-me {
-  background-color: color(border);
-  background-image: url("../img/rs-guitar-electric-guitar-les-paul-epiphone-159266.jpeg"),
-    radial-gradient(whitesmoke, #333, #111);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
+	background-color: color(border);
+	background-image: url("../img/rs-guitar-electric-guitar-les-paul-epiphone-159266.jpeg"),
+		radial-gradient(whitesmoke, #333, #111);
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: overlay;
 
-  color: color(color-light);
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5em;
-  height: 100vh;
+	color: color(color-light);
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5em;
+	height: 100vh;
 
-  justify-content: center;
-  align-items: center;
+	justify-content: center;
+	align-items: center;
 
-  &-title {
-    font-family: "Montserrast", sans-serif;
-    margin: 0;
-    font-size: 2rem;
-    text-decoration: underline;
-  }
+	&-title {
+		font-family: "Montserrast", sans-serif;
+		margin: 0;
+		font-size: 2rem;
+		text-decoration: underline;
+	}
 
-  &-sub-title {
-    text-indent: 1em;
-    max-width: 500px;
-    font-weight: 700;
-  }
+	&-sub-title {
+		text-indent: 1em;
+		max-width: 500px;
+		font-weight: 700;
+	}
 
-  a {
-    @include anchor-light;
-    padding: 0;
-    margin: 0;
+	a {
+		@include anchor-light;
+		padding: 0;
+		margin: 0;
 
-    &:hover {
-      @include anchor-hover-light;
-    }
-  }
+		&:hover {
+			@include anchor-hover-light;
+		}
+	}
 }
 
 .they-say {
-  text-align: center;
-  text-shadow: none;
-  font-weight: bold;
-  line-height: 1.4rem;
+	text-align: center;
+	text-shadow: none;
+	font-weight: bold;
+	line-height: 1.4rem;
 
-  .container-they-say {
-    width: 50%;
-    margin: 0 auto;
+	.container-they-say {
+		width: 50%;
+		margin: 0 auto;
 
-    .name-title {
-      font-size: 0.7rem;
-    }
+		.name-title {
+			font-size: 0.7rem;
+		}
 
-    p {
-      font-size: 1rem;
-      margin: 0;
-    }
+		p {
+			font-size: 1rem;
+			margin: 0;
+		}
 
-    h2 {
-      font-family: "Montserrast", sans-serif;
-      margin: 50px;
-      text-decoration: none;
-      line-height: 2rem;
-    }
+		h2 {
+			font-family: "Montserrast", sans-serif;
+			margin: 50px;
+			text-decoration: none;
+			line-height: 2rem;
+		}
 
-    img {
-      width: 80%;
-      margin: 5px;
-    }
+		img {
+			width: 80%;
+			margin: 5px;
+		}
 
-    .img-codecademy {
-      width: 50%;
-      margin-top: 50px;
-    }
+		.img-codecademy {
+			width: 50%;
+			margin-top: 50px;
+		}
 
-    .p-codecademy {
-      margin-top: 0px;
-      margin-bottom: 50px;
-    }
-  }
+		.p-codecademy {
+			margin-top: 0px;
+			margin-bottom: 50px;
+		}
+	}
 }
 
 .contact {
-  // margin: 2em;
-  padding-top: 5em;
-  padding-bottom: 1em;
-  background-image: url("../img/rs-concert-1149979_1280.jpg"),
-    radial-gradient(whitesmoke, #777, #333);
-  background-position: center;
-  background-size: cover;
-  /*   background-size: contain; */
-  /*   background-repeat: no-repeat; */
-  background-blend-mode: overlay;
-  text-shadow: 1px 1px 1px whitesmoke;
-  height: 90vh;
+	// margin: 2em;
+	padding-top: 5em;
+	padding-bottom: 1em;
+	background-image: url("../img/rs-concert-1149979_1280.jpg"),
+		radial-gradient(whitesmoke, #777, #333);
+	background-position: center;
+	background-size: cover;
+	/*   background-size: contain; */
+	/*   background-repeat: no-repeat; */
+	background-blend-mode: overlay;
+	text-shadow: 1px 1px 1px whitesmoke;
+	height: 90vh;
 
-  &-title {
-    text-align: center;
-    text-decoration: underline;
-    font-family: "Montserrast", sans-serif;
-    margin: 0;
-    font-size: 2rem;
-  }
+	&-title {
+		text-align: center;
+		text-decoration: underline;
+		font-family: "Montserrast", sans-serif;
+		margin: 0;
+		font-size: 2rem;
+	}
 
-  .form {
-    max-width: 500px;
-    margin: 0 auto;
+	.form {
+		max-width: 500px;
+		margin: 0 auto;
 
-    label {
-      color: color(parent-bg);
-      font-size: 1.2em;
-      font-weight: 700;
-    }
+		label {
+			color: color(parent-bg);
+			font-size: 1.2em;
+			font-weight: 700;
+		}
 
-    input,
-    textarea {
-      @include box-shadow;
-      width: 100%;
-      margin-top: 0.25rem;
-      margin-bottom: 0.75rem;
-      outline: none;
-      border: 2px solid color(bg);
-      border-radius: 0.3em;
-      padding: 0.5em;
-      color: inherit;
-      font-family: inherit;
-      font-size: 1em;
-      font-weight: 700;
-      color: color(border);
-      transition: border-color 0.2s;
-    }
+		input,
+		textarea {
+			@include box-shadow;
+			width: 100%;
+			margin-top: 0.25rem;
+			margin-bottom: 0.75rem;
+			outline: none;
+			border: 2px solid color(bg);
+			border-radius: 0.3em;
+			padding: 0.5em;
+			color: inherit;
+			font-family: inherit;
+			font-size: 1em;
+			font-weight: 700;
+			color: color(border);
+			transition: border-color 0.2s;
+		}
 
-    textarea {
-      resize: vertical;
-      min-height: 75px;
-      max-height: 200px;
-    }
+		textarea {
+			resize: vertical;
+			min-height: 75px;
+			max-height: 200px;
+		}
 
-    input:focus,
-    textarea:focus {
-      border-color: color(border);
-    }
-  }
+		input:focus,
+		textarea:focus {
+			border-color: color(border);
+		}
+	}
 }
 
 .btn {
-  @include box-shadow;
-  background-color: color(border);
-  color: color(color-light);
-  padding: 0.25em 1em;
-  text-decoration: none;
-  border: 1px solid color(color-light);
-  cursor: pointer;
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: 700;
+	@include box-shadow;
+	background-color: color(border);
+	color: color(color-light);
+	padding: 0.25em 1em;
+	text-decoration: none;
+	border: 1px solid color(color-light);
+	cursor: pointer;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: 700;
 
-  &:hover,
-  &:focus {
-    background-color: color(color-light);
-    border: 1px solid color(border);
-    color: color(border);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
-  }
+	&:hover,
+	&:focus {
+		background-color: color(color-light);
+		border: 1px solid color(border);
+		color: color(border);
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+	}
 }
 
 .btn-container {
-  text-align: start;
-  margin-top: 1em;
-  .btn-square {
-    border-radius: 0.3em;
-  }
+	text-align: start;
+	margin-top: 1em;
+	.btn-square {
+		border-radius: 0.3em;
+	}
 }
 
 .footer {
-  display: flex;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 1.3em;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
+	display: flex;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 1.3em;
+	justify-content: space-around;
+	align-items: center;
+	height: 10vh;
 
-  ul {
-    display: flex;
+	ul {
+		display: flex;
 
-    li {
-      margin: 0 2.5em;
-      list-style: none;
+		li {
+			margin: 0 2.5em;
+			list-style: none;
 
-      a {
-        @include anchor;
+			a {
+				@include anchor;
 
-        &:hover {
-          @include anchor-hover;
-        }
-      }
-    }
-  }
+				&:hover {
+					@include anchor-hover;
+				}
+			}
+		}
+	}
 }
 
 @keyframes scroll-down-bounce {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-5px);
-    // transform: rotate(180deg);
-  }
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(-5px);
+		// transform: rotate(180deg);
+	}
 }
 
 @media (max-width: 500px) {
-  body {
-    font-size: 9px;
-    width: 400px auto;
-  }
+	body {
+		font-size: 9px;
+		width: 400px auto;
+	}
 
-  form,
-  .hero {
-    width: 350px;
-  }
+	form,
+	.hero {
+		width: 350px;
+	}
 
-  .projects {
-    height: 105em;
-  }
+	.projects {
+		height: 105em;
+	}
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
+	.projects-grid {
+		grid-template-columns: 1fr;
+	}
 
-  .about-me p {
-    font-size: 0.9rem;
-  }
+	.about-me p {
+		font-size: 0.9rem;
+	}
 
-  .they-say {
-    width: 100%;
-    margin: 0 auto;
+	.they-say {
+		width: 100%;
+		margin: 0 auto;
 
-    .container-they-say {
-      width: 100%;
-    }
-  }
+		.container-they-say {
+			width: 100%;
+		}
+	}
 
-  .contact {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-  }
+	.contact {
+		height: 90vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 1rem;
+	}
 
-  .video {
-    width: 100%;
-    overflow: hidden;
-  }
-
+	.video {
+		width: 100%;
+		overflow: hidden;
+	}
 }
