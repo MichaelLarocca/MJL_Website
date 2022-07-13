@@ -1,328 +1,401 @@
 * {
-  box-sizing: border-box; }
+	box-sizing: border-box;
+}
 
 html {
-  scroll-behavior: smooth; }
+	scroll-behavior: smooth;
+}
 
 body {
-  margin: 0;
-  color: #3a3245;
-  font-family: "Cardo", serifpx;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
-  font-size: 16px; }
+	margin: 0;
+	color: #3a3245;
+	font-family: "Cardo", serifpx;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+	font-size: 16px;
+}
 
 nav {
-  font-family: "Montserrat", sans-serif; }
+	font-family: "Montserrat", sans-serif;
+}
 
 .full-name {
-  font-family: "Montserrat", sans-serif; }
+	font-family: "Montserrat", sans-serif;
+}
 
 .header {
-  height: 100vh;
-  background-image: url("../img/rs-pexels-negative-space-34153.jpg");
-  background-size: cover;
-  background-position: center;
-  color: #cabcc5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative; }
+	height: 100vh;
+	background-image: url("../img/rs-pexels-negative-space-34153.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #cabcc5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #cabcc5;
-  color: #3a3245;
-  font-family: "Montserrat", sans-serif;
-  padding: 0.5rem 1rem; }
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #cabcc5;
+	color: #3a3245;
+	font-family: "Montserrat", sans-serif;
+	padding: 0.5rem 1rem;
+}
 
 .nav-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  font-weight: 700; }
-  .nav-top .logo a {
-    text-decoration: none;
-    color: #3a3245;
-    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
-    margin-left: 1rem;
-    padding: 0.5rem;
-    color: whitesmoke; }
-  .nav-top .nav-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    .nav-top .nav-list a {
-      text-decoration: none;
-      color: #3a3245;
-      transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
-      margin-left: 1rem;
-      padding: 0.5rem; }
-      .nav-top .nav-list a:hover, .nav-top .nav-list a:focus {
-        background-color: #3a3245;
-        color: whitesmoke;
-        text-decoration: underline; }
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	font-weight: 700;
+}
+.nav-top .logo a {
+	text-decoration: none;
+	color: #3a3245;
+	transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+	margin-left: 1rem;
+	padding: 0.5rem;
+	color: whitesmoke;
+}
+.nav-top .nav-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav-top .nav-list a {
+	text-decoration: none;
+	color: #3a3245;
+	transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+	margin-left: 1rem;
+	padding: 0.5rem;
+}
+.nav-top .nav-list a:hover,
+.nav-top .nav-list a:focus {
+	background-color: #3a3245;
+	color: whitesmoke;
+	text-decoration: underline;
+}
 
 .hero {
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-  border: 1px solid #cabcc5;
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 1;
-  padding: 2rem;
-  border-radius: 5px; }
-  .hero h2 {
-    text-align: center; }
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+	border: 1px solid #cabcc5;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 1;
+	padding: 2rem;
+	border-radius: 5px;
+}
+.hero h2 {
+	text-align: center;
+}
 
 .title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
-  color: whitesmoke;
-  opacity: 1;
-  margin: 0; }
+	font-family: "Montserrat", sans-serif;
+	font-size: 3rem;
+	color: whitesmoke;
+	opacity: 1;
+	margin: 0;
+}
 
 .sub-title {
-  font-size: 1.5rem;
-  color: whitesmoke;
-  margin-top: 0.3rem; }
+	font-size: 1.5rem;
+	color: whitesmoke;
+	margin-top: 0.3rem;
+}
 
 .down-arrow {
-  position: absolute;
-  bottom: 1rem;
-  font-size: 2rem;
-  color: whitesmoke;
-  animation: scroll-down-bounce 1s alternate 5s infinite linear; }
+	position: absolute;
+	bottom: 1rem;
+	font-size: 2rem;
+	color: whitesmoke;
+	animation: scroll-down-bounce 1s alternate 5s infinite linear;
+}
 
 .projects {
-  padding: 5rem;
-  font-weight: 700;
-  height: 100vh; }
-  .projects-title {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    text-align: center; }
-  .projects h3 {
-    text-align: center; }
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(auto, auto));
-    justify-content: center;
-    row-gap: 10px;
-    column-gap: 50px; }
-  .projects-grid-item {
-    text-align: center;
-    font-size: 1.2rem; }
-  .projects-grid-item img {
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-    width: 50%; }
-  .projects img {
-    transition: all 0.1s ease-in-out; }
-  .projects img:hover,
-  .projects img:focus {
-    transform: scale(1.03);
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
+	padding: 5rem;
+	font-weight: 700;
+	height: 100vh;
+}
+.projects-title {
+	font-family: "Montserrat", sans-serif;
+	margin: 0;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	text-align: center;
+}
+.projects h3,
+.projects h6 {
+	text-align: center;
+}
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(auto, auto));
+	justify-content: center;
+	row-gap: 10px;
+	column-gap: 50px;
+}
+.projects-grid-item {
+	text-align: center;
+	font-size: 1.2rem;
+}
+.projects-grid-item img {
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+	width: 50%;
+}
+.projects img {
+	transition: all 0.1s ease-in-out;
+}
+.projects img:hover,
+.projects img:focus {
+	transform: scale(1.03);
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
 
 .projects-dark {
-  background-color: #242424;
-  color: whitesmoke; }
+	background-color: #242424;
+	color: whitesmoke;
+}
 
 .about-me {
-  background-color: #51405e;
-  background-image: url("../img/rs-guitar-electric-guitar-les-paul-epiphone-159266.jpeg"), radial-gradient(whitesmoke, #333, #111);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
-  color: whitesmoke;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5em;
-  height: 100vh;
-  justify-content: center;
-  align-items: center; }
-  .about-me-title {
-    font-family: "Montserrast", sans-serif;
-    margin: 0;
-    font-size: 2rem;
-    text-decoration: underline; }
-  .about-me-sub-title {
-    text-indent: 1em;
-    max-width: 500px;
-    font-weight: 700; }
-  .about-me a {
-    text-decoration: underline;
-    color: whitesmoke;
-    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
-    margin-left: 1rem;
-    padding: 0.5rem;
-    padding: 0;
-    margin: 0; }
-    .about-me a:hover {
-      background-color: whitesmoke;
-      color: #3a3245;
-      text-decoration: underline; }
+	background-color: #51405e;
+	background-image: url("../img/rs-guitar-electric-guitar-les-paul-epiphone-159266.jpeg"),
+		radial-gradient(whitesmoke, #333, #111);
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: overlay;
+	color: whitesmoke;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5em;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+.about-me-title {
+	font-family: "Montserrast", sans-serif;
+	margin: 0;
+	font-size: 2rem;
+	text-decoration: underline;
+}
+.about-me-sub-title {
+	text-indent: 1em;
+	max-width: 500px;
+	font-weight: 700;
+}
+.about-me a {
+	text-decoration: underline;
+	color: whitesmoke;
+	transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+	margin-left: 1rem;
+	padding: 0.5rem;
+	padding: 0;
+	margin: 0;
+}
+.about-me a:hover {
+	background-color: whitesmoke;
+	color: #3a3245;
+	text-decoration: underline;
+}
 
 .they-say {
-  text-align: center;
-  text-shadow: none;
-  font-weight: bold;
-  line-height: 1.4rem; }
-  .they-say .container-they-say {
-    width: 50%;
-    margin: 0 auto; }
-    .they-say .container-they-say .name-title {
-      font-size: 0.7rem; }
-    .they-say .container-they-say p {
-      font-size: 1rem;
-      margin: 0; }
-    .they-say .container-they-say h2 {
-      font-family: "Montserrast", sans-serif;
-      margin: 50px;
-      text-decoration: none;
-      line-height: 2rem; }
-    .they-say .container-they-say img {
-      width: 80%;
-      margin: 5px; }
-    .they-say .container-they-say .img-codecademy {
-      width: 50%;
-      margin-top: 50px; }
-    .they-say .container-they-say .p-codecademy {
-      margin-top: 0px;
-      margin-bottom: 50px; }
+	text-align: center;
+	text-shadow: none;
+	font-weight: bold;
+	line-height: 1.4rem;
+}
+.they-say .container-they-say {
+	width: 50%;
+	margin: 0 auto;
+}
+.they-say .container-they-say .name-title {
+	font-size: 0.7rem;
+}
+.they-say .container-they-say p {
+	font-size: 1rem;
+	margin: 0;
+}
+.they-say .container-they-say h2 {
+	font-family: "Montserrast", sans-serif;
+	margin: 50px;
+	text-decoration: none;
+	line-height: 2rem;
+}
+.they-say .container-they-say img {
+	width: 80%;
+	margin: 5px;
+}
+.they-say .container-they-say .img-codecademy {
+	width: 50%;
+	margin-top: 50px;
+}
+.they-say .container-they-say .p-codecademy {
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
 
 .contact {
-  padding-top: 5em;
-  padding-bottom: 1em;
-  background-image: url("../img/rs-concert-1149979_1280.jpg"), radial-gradient(whitesmoke, #777, #333);
-  background-position: center;
-  background-size: cover;
-  /*   background-size: contain; */
-  /*   background-repeat: no-repeat; */
-  background-blend-mode: overlay;
-  text-shadow: 1px 1px 1px whitesmoke;
-  height: 90vh; }
-  .contact-title {
-    text-align: center;
-    text-decoration: underline;
-    font-family: "Montserrast", sans-serif;
-    margin: 0;
-    font-size: 2rem; }
-  .contact .form {
-    max-width: 500px;
-    margin: 0 auto; }
-    .contact .form label {
-      color: #242424;
-      font-size: 1.2em;
-      font-weight: 700; }
-    .contact .form input,
-    .contact .form textarea {
-      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-      width: 100%;
-      margin-top: 0.25rem;
-      margin-bottom: 0.75rem;
-      outline: none;
-      border: 2px solid #cabcc5;
-      border-radius: 0.3em;
-      padding: 0.5em;
-      color: inherit;
-      font-family: inherit;
-      font-size: 1em;
-      font-weight: 700;
-      color: #51405e;
-      transition: border-color 0.2s; }
-    .contact .form textarea {
-      resize: vertical;
-      min-height: 75px;
-      max-height: 200px; }
-    .contact .form input:focus,
-    .contact .form textarea:focus {
-      border-color: #51405e; }
+	padding-top: 5em;
+	padding-bottom: 1em;
+	background-image: url("../img/rs-concert-1149979_1280.jpg"),
+		radial-gradient(whitesmoke, #777, #333);
+	background-position: center;
+	background-size: cover;
+	/*   background-size: contain; */
+	/*   background-repeat: no-repeat; */
+	background-blend-mode: overlay;
+	text-shadow: 1px 1px 1px whitesmoke;
+	height: 90vh;
+}
+.contact-title {
+	text-align: center;
+	text-decoration: underline;
+	font-family: "Montserrast", sans-serif;
+	margin: 0;
+	font-size: 2rem;
+}
+.contact .form {
+	max-width: 500px;
+	margin: 0 auto;
+}
+.contact .form label {
+	color: #242424;
+	font-size: 1.2em;
+	font-weight: 700;
+}
+.contact .form input,
+.contact .form textarea {
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+	width: 100%;
+	margin-top: 0.25rem;
+	margin-bottom: 0.75rem;
+	outline: none;
+	border: 2px solid #cabcc5;
+	border-radius: 0.3em;
+	padding: 0.5em;
+	color: inherit;
+	font-family: inherit;
+	font-size: 1em;
+	font-weight: 700;
+	color: #51405e;
+	transition: border-color 0.2s;
+}
+.contact .form textarea {
+	resize: vertical;
+	min-height: 75px;
+	max-height: 200px;
+}
+.contact .form input:focus,
+.contact .form textarea:focus {
+	border-color: #51405e;
+}
 
 .btn {
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-  background-color: #51405e;
-  color: whitesmoke;
-  padding: 0.25em 1em;
-  text-decoration: none;
-  border: 1px solid whitesmoke;
-  cursor: pointer;
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: 700; }
-  .btn:hover, .btn:focus {
-    background-color: whitesmoke;
-    border: 1px solid #51405e;
-    color: #51405e;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); }
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+	background-color: #51405e;
+	color: whitesmoke;
+	padding: 0.25em 1em;
+	text-decoration: none;
+	border: 1px solid whitesmoke;
+	cursor: pointer;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: 700;
+}
+.btn:hover,
+.btn:focus {
+	background-color: whitesmoke;
+	border: 1px solid #51405e;
+	color: #51405e;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
 
 .btn-container {
-  text-align: start;
-  margin-top: 1em; }
-  .btn-container .btn-square {
-    border-radius: 0.3em; }
+	text-align: start;
+	margin-top: 1em;
+}
+.btn-container .btn-square {
+	border-radius: 0.3em;
+}
 
 .footer {
-  display: flex;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 1.3em;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh; }
-  .footer ul {
-    display: flex; }
-    .footer ul li {
-      margin: 0 2.5em;
-      list-style: none; }
-      .footer ul li a {
-        text-decoration: none;
-        color: #3a3245;
-        transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
-        margin-left: 1rem;
-        padding: 0.5rem; }
-        .footer ul li a:hover {
-          background-color: #3a3245;
-          color: whitesmoke;
-          text-decoration: underline; }
+	display: flex;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 1.3em;
+	justify-content: space-around;
+	align-items: center;
+	height: 10vh;
+}
+.footer ul {
+	display: flex;
+}
+.footer ul li {
+	margin: 0 2.5em;
+	list-style: none;
+}
+.footer ul li a {
+	text-decoration: none;
+	color: #3a3245;
+	transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+	margin-left: 1rem;
+	padding: 0.5rem;
+}
+.footer ul li a:hover {
+	background-color: #3a3245;
+	color: whitesmoke;
+	text-decoration: underline;
+}
 
 @keyframes scroll-down-bounce {
-  from {
-    transform: translateY(0); }
-  to {
-    transform: translateY(-5px); } }
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(-5px);
+	}
+}
 
 @media (max-width: 500px) {
-  body {
-    font-size: 9px;
-    width: 400px auto; }
-  form,
-  .hero {
-    width: 350px; }
-  .projects {
-    height: 105em; }
-  .projects-grid {
-    grid-template-columns: 1fr; }
-  .about-me p {
-    font-size: 0.9rem; }
-  .they-say {
-    width: 100%;
-    margin: 0 auto; }
-    .they-say .container-they-say {
-      width: 100%; }
-  .contact {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem; }
-  .video {
-    width: 100%;
-    overflow: hidden; } }
+	body {
+		font-size: 9px;
+		width: 400px auto;
+	}
+	form,
+	.hero {
+		width: 350px;
+	}
+	.projects {
+		height: 105em;
+	}
+	.projects-grid {
+		grid-template-columns: 1fr;
+	}
+	.about-me p {
+		font-size: 0.9rem;
+	}
+	.they-say {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.they-say .container-they-say {
+		width: 100%;
+	}
+	.contact {
+		height: 90vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 1rem;
+	}
+	.video {
+		width: 100%;
+		overflow: hidden;
+	}
+}
